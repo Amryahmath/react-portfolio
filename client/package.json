@@ -1,5 +1,5 @@
 {
-  
+  "homepage": "https://Amryahmath.github.io/react-portfolio",
   "name": "my-portfolio-client",
   "version": "1.0.0",
   "private": true,
@@ -9,6 +9,8 @@
   },
   "scripts": {
     "start": "npx serve .",
-    "build": "echo 'No build step configured'"
+    "build": "echo 'No build step configured'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
